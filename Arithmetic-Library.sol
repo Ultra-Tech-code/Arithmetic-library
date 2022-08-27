@@ -20,6 +20,7 @@ library arithmetic{
     }
 //divide two numbers
     function divide(uint num1, uint num2) external pure returns(uint){
+        require(num2 > 0, "divisor cannot be 0");
         uint result = num1 / num2;
         return result;
     }
