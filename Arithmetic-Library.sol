@@ -9,7 +9,7 @@ library arithmetic{
         return result;
     }
 //Subtracts two numbers
-    function subtract(uint num1, uint num2) external view returns(uint){
+    function subtract(uint num1, uint num2) external pure returns(uint){
         uint result = num1 - num2;
         return result;
     }
@@ -57,7 +57,7 @@ contract Test {
 
     // We create a function getExponent that accepts two input and we return their exponential
     //using the exponential method in the library.
-        function getExponent(uint num1, uint num2) external view returns(uint){
+        function getExponent(uint num1, uint num2) external pure returns(uint){
             return num1.exponential(num2);
         }
     }
